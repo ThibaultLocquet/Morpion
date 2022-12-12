@@ -43,7 +43,7 @@ const Morpion = () => {
           setTourDeJeu(!tourDeJeu);
           setAffichageTurn("X");
           console.log([i]);
-          if (win(square)) {
+          if (win() === true) {
             setEnd(true);
           }
         }
@@ -54,7 +54,7 @@ const Morpion = () => {
         setTourDeJeu(!tourDeJeu);
         setAffichageTurn("O");
         console.log([i]);
-        if (win(square)) {
+        if (win() === true) {
           setEnd(true);
         }
       }
